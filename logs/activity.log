@@ -1,0 +1,12 @@
+[2026-10-19 19:13:16] User:2 IP:::1 Type:note_created Details:Title: вапро
+[2026-10-19 19:13:16] User:2 IP:::1 Type:note_created Details:Title: вапро
+[2026-10-19 19:14:09] User:2 IP:::1 Type:logout Details:User logged out
+[2026-10-19 19:14:12] User:anonymous IP:::1 Type:login_failed Details:Email: tpwrzz@gmail.com
+[2026-10-19 19:14:22] User:anonymous IP:::1 Type:login_failed Details:Email: tpwrzz@gmail.com
+[2026-10-19 19:14:36] User:anonymous IP:::1 Type:register Details:Email: tpwrzz@gmail.com
+[2026-10-19 19:14:39] User:4 IP:::1 Type:login_success Details:Email: tpwrzz@gmail.com
+[2026-10-19 19:22:25] User:4 IP:::1 Type:note_created Details:Title: dfs
+[2026-10-19 19:22:37] User:4 IP:::1 Type:note_access_denied Details:Note ID: 2
+[2026-10-19 19:23:17] User:4 IP:::1 Type:logout Details:User logged out
+[2026-10-19 19:23:25] User:1 IP:::1 Type:login_success Details:Email: admin@example.local
+[2026-10-19 19:23:57] User:1 IP:::1 Type:admin_page_accessed Details:User viewed admin panel

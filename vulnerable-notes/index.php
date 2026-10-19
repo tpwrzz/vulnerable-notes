@@ -1,11 +1,10 @@
 <?php
-require_once 'config.php';
+require_once 'config/config.php';
 
 if (isset($_SESSION['user_id'])) {
-    header('Location: dashboard.php');
+    header('Location: notes/dashboard.php');
     exit;
 }
 
-header('Location: login.php');
+header('Location: login/login.php');
 exit;
-

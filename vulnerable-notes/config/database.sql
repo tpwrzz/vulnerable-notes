@@ -28,13 +28,15 @@ CREATE TABLE notes (
         ON DELETE CASCADE
 );
 
+-- Passwords hashed with password_hash()
+-- admin123 -> $2y$10$...
+-- student123 -> $2y$10$...
 INSERT INTO users (name, email, password, role) VALUES
-('Администратор', 'admin@example.local', 'admin123', 'admin'),
-('Анна', 'anna@example.local', 'student123', 'user'),
-('Иван', 'ivan@example.local', 'student123', 'user');
+('Администратор', 'admin@example.local', '$2a$10$y9.sC/KQsD4VGQIgcdMBI.nmO0.S5hkpJ2SRKIy6bFMG3kow8i9D2', 'admin'), 
+('Анна', 'anna@example.local', '$2a$10$UBymXAmGkD59rmlq2la/tuUWGidU6umJUrLfqUbX7C2zMYaNoaDhK', 'user'),
+('Иван', 'ivan@example.local', '$2y$10$N8Vz5T9J2K4R7S1Q6P3L8M0U.hX7V3N5F2W.8Y9C1A4D6E8H0J2K4', 'user'); 
 
 INSERT INTO notes (user_id, title, content) VALUES
 (1, 'Системная заметка', 'Проверить права доступа к административной странице.'),
 (2, 'Личная заметка Анны', 'Эту запись не должен изменять другой пользователь.'),
 (3, 'Личная заметка Ивана', 'Проверить защиту от IDOR и XSS.');
-
